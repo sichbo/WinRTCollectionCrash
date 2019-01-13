@@ -1,0 +1,7 @@
+.vs
+Debug
+ARM
+*.user
+Generated Files
+obj
+packages

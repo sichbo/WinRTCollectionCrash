@@ -1,0 +1,16 @@
+
+namespace A {
+
+	[default_interface]
+	runtimeclass ThingCollection : Windows.Foundation.Collections.IVector<Thing> {
+		ThingCollection();
+	}
+
+	[default_interface]
+	runtimeclass Thing : Windows.Foundation.IStringable {
+		Thing();
+		String Name;
+		//static Windows.Foundation.IAsyncOperation<ThingCollection> GetThings();
+		static ThingCollection GetThings();
+	}
+}
